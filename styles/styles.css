@@ -496,6 +496,85 @@ span {
 .bottom-soc-link:is(:hover, :focus) {
   background-color: #31d0aa;
 }
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe {
+  margin-left: 80px;
+}
+
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.subcribe-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  width: 264px;
+  height: 40px;
+  outline: none;
+  padding-left: 16px;
+  color: #ffffff;
+  transition: border-color var(--transition-dur-func);
+}
+
+.subcribe-form-input:focus {
+  border-color: #ffffff;
+}
+
+.subcribe-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+
+  letter-spacing: 0.04em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  border-radius: 4px;
+  border: 1px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 24px;
+  color: #ffffff;
+  margin-left: 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+  transition: background-color var(--transition-dur-func),
+    box-shadow var(--transition-dur-func);
+}
+
+.subcribe-icon {
+  fill: #ffffff;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  outline: none;
+}
+
 /* ----------------------------------------Portfolio----------------------------------- */
 
 /* --------------------------------------------Buttons------------------------------------------- */
@@ -866,4 +945,5 @@ span {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background: var(--accent-color);
+  outline: none;
 }
